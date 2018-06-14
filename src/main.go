@@ -1,6 +1,6 @@
 package main
 
-import fmt "fmt" // 入出力フォーマットを実装したパッケージ
+import fmt "fmt"
 
 func main() {
 	fmt.Printf("Plasma")
