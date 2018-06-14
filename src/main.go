@@ -13,8 +13,11 @@ func main() {
 	//e.Use(middleware.Logger())
 	//e.Use(middleware.Recover())
 
+	e.File("/", "public/views/index.html")
 	// ルーティング
-	e.GET("/hello", handler.MainPage())
+	e.GET("/api/hello", handler.MainPage())
+
+	e.GET("/api/test", func(c echo.Context) error { return c.JSON(200, "test") })
 
 	// サーバー起動
 	e.Start(":1323")    //ポート番号指定してね
