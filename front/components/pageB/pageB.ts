@@ -1,11 +1,10 @@
-import Vue from 'vue';
-import axios from 'axios';
+import Vue from "vue";
 
 const pageB = Vue.extend({
-    data(){
+    data() {
         return {
             msg: "aaaa",
-        }
+        };
     },
 });
 export default pageB;
