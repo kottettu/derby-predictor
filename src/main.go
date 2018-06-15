@@ -13,7 +13,7 @@ func main() {
 	//e.Use(middleware.Logger())
 	//e.Use(middleware.Recover())
 
-	e.File("/", "public/views/index.html")
+	e.Static("/", "public")
 	// ルーティング
 	e.GET("/api/hello", handler.MainPage())
 

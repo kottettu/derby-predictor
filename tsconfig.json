@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strict": true,
+  },
+  "include": [
+    "./front/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
