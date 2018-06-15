@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vue simple sample </title>
+</head>
+<body>
+<div id="app">
+    <h1>Hello App!</h1>
+    <p>
+        <!-- ナビゲーション向けに v-link ディレクティブを使用 -->
+        <router-link tag="li" to="/pageA">
+            <a>Go to PageA</a>
+        </router-link>
+        <router-link tag="li" to="/pageB">
+            <a>Go to PageB</a>
+        </router-link>
+    </p>
+    <!-- route outlet -->
+    <router-view></router-view>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
