@@ -16,12 +16,4 @@
     </div>
 </template>
 
-<script>
-    module.exports = {
-        data: function () {
-            return {
-                msg: 'yes page B!!!!!'
-            }
-        }
-    }
-</script>
+<script lang="ts" src="./pageB.ts" />

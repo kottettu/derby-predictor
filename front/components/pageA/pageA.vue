@@ -1,6 +1,7 @@
+
 <style lang="scss">
     .yellow {
-        color: #f0f;
+        color: #ff0;
     }
 </style>
 
@@ -11,18 +12,9 @@
             this page is A!!!
         </p>
         <p>
-            msg = {{msg}}
+            msg = {{test}}
         </p>
     </div>
-
 </template>
 
-<script>
-    module.exports = {
-        data: function () {
-            return {
-                msg: 'yes page A'
-            }
-        }
-    }
-</script>
+<script lang="ts" src="./pageA.ts" />

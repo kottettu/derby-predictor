@@ -1,17 +1,15 @@
-var Vue = require('vue').default;
-var VueRouter = require('vue-router').default;
-Vue.use(VueRouter)
-var PageA = Vue.extend(require('./components/pageA.vue').default);
-var PageB = Vue.extend(require('./components/pageB.vue').default);
-
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import pageA from './components/pageA/pageA.vue';
+import pageB from './components/pageB/pageB.vue';
+Vue.use(VueRouter);
 var router = new VueRouter({
     routes: [
-        { path: '/pageA', component: PageA },
-        { path: '/pageB', component: PageB }
+        { path: '/pageA', component: pageA },
+        { path: '/pageB', component: pageB }
     ]
-})
-
-new Vue({
-    el: '#app',
-    router: router,
-})
+});
+const app = new Vue({
+    router
+}).$mount('#app');
+//# sourceMappingURL=main.js.map
