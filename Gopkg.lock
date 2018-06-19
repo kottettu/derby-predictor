@@ -2,6 +2,21 @@
 
 
 [[projects]]
+  name = "github.com/go-sql-driver/mysql"
+  packages = ["."]
+  revision = "d523deb1b23d913de5bdada721a6071e71283618"
+  version = "v1.4.0"
+
+[[projects]]
+  name = "github.com/gocraft/dbr"
+  packages = [
+    ".",
+    "dialect"
+  ]
+  revision = "a0fd650918f6287ffe111d1c7b66bb755ff3be4a"
+  version = "v2.2"
+
+[[projects]]
   name = "github.com/labstack/echo"
   packages = ["."]
   revision = "6d227dfea4d2e52cb76856120b3c17f758139b4e"
@@ -55,9 +70,15 @@
   packages = ["unix"]
   revision = "56ede360ec1c541828fb88741b3f1049406d28f5"
 
+[[projects]]
+  name = "google.golang.org/appengine"
+  packages = ["cloudsql"]
+  revision = "b1f26356af11148e710935ed1ac8a7f5702c7612"
+  version = "v1.1.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "709d3b18b53723eb76b75f762857b2a6a57366522f8f171de622032d9de2e187"
+  inputs-digest = "0818617d336ee53bfe823dc23ef38261b0b5e4a237be6d6e793192471d42fd6a"
   solver-name = "gps-cdcl"
   solver-version = 1
