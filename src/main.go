@@ -35,7 +35,7 @@ type (
 var (
 	tablename = "userinfo"
 	seq   = 1
-	conn, _ = dbr.Open("mysql", "root:@tcp(127.0.0.1:3306)/ws2", nil)
+	conn, err = dbr.Open("mysql", "root:root@tcp(127.0.0.1:3306)/userinfo", nil)
 	sess = conn.NewSession(nil)
 )
 //-------
@@ -56,8 +56,8 @@ func insertUser(c echo.Context) error {
 
 func selectUsers(c echo.Context) error {
 	var u []userinfo
-
 	sess.Select("*").From(tablename).Load(&u)
+
 	response := new(responseData)
 	response.Users = u
 	return c.JSON(http.StatusOK,response)
