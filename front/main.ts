@@ -1,14 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import pageA from "./components/pageA/pageA.vue";
-import pageB from "./components/pageB/pageB.vue";
+import search from "./components/search/search.vue";
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
     routes: [
-        { path: "/pageA", component: pageA },
-        { path: "/pageB", component: pageB },
+        { path: "/", component: search },
     ],
 });
 

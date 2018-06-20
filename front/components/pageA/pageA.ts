@@ -13,7 +13,7 @@ const pageA = Vue.extend({
             // テストのため返り値をコンソールに表示
             this.test = res.data;
         }).catch((error) => {
-            console.log(error);
+            // console.log(error);
         });
     },
 });

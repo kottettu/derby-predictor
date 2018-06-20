@@ -1,14 +1,21 @@
+import axios from "axios";
 import Vue from "vue";
 
 const search = Vue.extend({
     data() {
         return {
-            msg: "aa",
+            name: "aa",
+            race_name: "",
         };
     },
     methods: {
-        search(): string {
-            return this.msg + " world";
+        search(): any {
+            axios.get("/api/test").then((res) => {
+                // テストのため返り値をコンソールに表示
+                this.name = res.data;
+            }).catch((error) => {
+                // console.log(error);
+            });
         },
     },
 
